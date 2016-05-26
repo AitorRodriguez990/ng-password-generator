@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="passwordGeneratorApp">
+    <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <!-- CSS files -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        <link href="../css/style.css" rel="stylesheet">
+        <!-- Title -->
+        <title>AngularJS Password Generator</title>
+    </head>
+    <body data-ng-controller="passwordGeneratorController">
+        <div class="container">
+            <!-- HEADER -->
+            <div class="page-header">
+                <h1>AngularJS Password Generator</h1>
+            </div>
+
+            <!-- CONTENT -->
+            <form role="form">
+                <h2>Options</h2>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" data-ng-model="options.uppercase">Uppercase characters
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" data-ng-model="options.numbers">Numbers
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" data-ng-model="options.specials">Special characters
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password Length</label>
+                    <input type="range" min="6" max="50" step="1" value="8" data-ng-model="options.passwordLength">{{options.passwordLength}}
+                </div>
+
+                <h2>Generate password</h2>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="form-inline">
+                        <input type="text" name="password" id="password" class="form-control" placeholder="Password" ng-model="passwordField">
+                        <password-generator field="passwordField" password-length="options.passwordLength" uppercase="options.uppercase" numbers="options.numbers" specials="options.specials"></password-generator>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted text-right">Aitor Rodríguez -
+                    <a href="http://www.frontendfactory.es" target="_blank">Front End Factory</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- JavaScript files -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="../app.js"></script>
+        <script src="../password-generator.js"></script>
+        <script src="../example/exampleController.js"></script>
+    </body>
+</html>
