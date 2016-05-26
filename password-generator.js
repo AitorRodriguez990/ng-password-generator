@@ -38,7 +38,7 @@
 
                  // Iterate while the number is less than passwordLength
                  var finalPassword = [];
-                 for (var i = 0; i < scope.passwordLength; i++) {
+                 for (var i = 0; i < (scope.passwordLength = (scope.passwordLength) ? scope.passwordLength : 8); i++) {
                      finalPassword.push(finalCharacters[Math.floor(Math.random() * finalCharacters.length)]);
                  };
 
