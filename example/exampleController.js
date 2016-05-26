@@ -1,6 +1,5 @@
 'use strict';
 
-// Customers controller
 passwordGeneratorApp.controller('passwordGeneratorController', ['$scope',
     function($scope) {
         $scope.passwordField = '';

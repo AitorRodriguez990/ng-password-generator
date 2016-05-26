@@ -8,8 +8,6 @@
  'use strict';
 
  passwordGeneratorApp.directive('passwordGenerator', function() {
-     'use strict';
-
      return {
          restrict: 'AE',
          replace: true,
