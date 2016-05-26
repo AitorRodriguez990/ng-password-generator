@@ -1,7 +1,7 @@
 # ng-password-generator
 AngularJS directive to generate a password
 
-<password-generator field="passwordField" password-length="" uppercase="" numbers="" specials=""></password-generator>
+    <password-generator field="passwordField" password-length="" uppercase="" numbers="" specials=""></password-generator>
 
 ## Status
 Developing
@@ -18,7 +18,8 @@ Comming soon
 
 ## Changelog
 ### v0.1
-* First preview
+* First preview of directive
+* Example code
 
 ## Thanks
 Based on https://github.com/rkammer/AngularJS-Password-Generator
