@@ -3,11 +3,28 @@ AngularJS password generator directive:
 
     <password-generator field="passwordField"></password-generator>
 
-## Status
-Developing
+## To Do List
+* Create demo page
+* Add minimum of uppercase characters, numbers and special characters when we set value to 'true'
+* Require only one file to add in the app
 
-## Example
-Comming soon
+## Install
+### Manual
+Download lastest release from [here](https://github.com/AitorRodriguez990/ng-password-generator/releases/latest).
+
+### Bower
+Install bower package:
+
+    bower install ng-password-generator --save
+
+Include the following files in your app:
+
+    <script src="ng-password-generator/app/app.js"></script>
+    <script src="ng-password-generator/app/password-generator.js></script>
+
+Add ngPasswordGenerator to your app's dependencies:
+    angular.module('myApplication', ['ngPasswordGenerator']);
+
 
 ## Usage
 Custom input field. Required:
@@ -42,6 +59,9 @@ With all parameters:
 * symbols: boolean
 
 ## Changelog
+### v0.3
+* Bower package created
+
 ### v0.2
 * Set default values
 
