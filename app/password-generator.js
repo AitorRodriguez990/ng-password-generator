@@ -5,9 +5,9 @@
   * License: MIT
   */
 
- 'use strict';
+'use strict';
 
- passwordGeneratorApp.directive('passwordGenerator', function() {
+passwordGeneratorApp.directive('passwordGenerator', function() {
      return {
          restrict: 'AE',
          replace: true,

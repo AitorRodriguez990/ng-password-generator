@@ -5,6 +5,6 @@
  * License: MIT
  */
 
-'use strict'; 
+'use strict';
 
-var passwordGeneratorApp = angular.module('passwordGeneratorApp', []);
+var passwordGeneratorApp = angular.module('ngPasswordGenerator', []);
