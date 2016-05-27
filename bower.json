@@ -1,0 +1,27 @@
+{
+    "name": "ng-password-generator",
+    "version": "0.2",
+    "homepage": "https://github.com/AitorRodriguez990/ng-password-generator",
+    "authors": [
+        "Aitor Rodríguez <aitor.rodriguez990@gmail.com>"
+    ],
+    "description": "AngularJS password generator directive",
+    "main": "./app/password-generator.js",
+    "keywords": [
+        "angularjs",
+        "directive",
+        "password",
+        "generator"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "^1.3.0"
+    }
+}
