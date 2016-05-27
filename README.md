@@ -1,5 +1,5 @@
 # ng-password-generator
-AngularJS directive to generate a password:
+AngularJS password generator directive:
 
     <password-generator field="passwordField"></password-generator>
 
