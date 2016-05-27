@@ -1,7 +1,7 @@
  /*
   * ng-password-generator - AngularJS directive to generate a password
   * Author: Aitor Rodríguez - http://www.frontendfactory.es/
-  * Version: 0.1
+  * Version: 0.2
   * License: MIT
   */
 
@@ -13,13 +13,19 @@
          replace: true,
          scope: {
              field: '=field',
-             passwordLength: '=passwordLength',
-             uppercase: '=uppercase',
-             numbers: '=numbers',
-             specials: '=specials'
+             passwordLength: '=?passwordLength',
+             uppercase: '=?uppercase',
+             numbers: '=?numbers',
+             specials: '=?specials'
          },
-         template: '<button type="button" class="btn btn-primary" data-ng-click="generatePassword()">Generate</button>',
+         template: '<button type="button" class="btn btn-primary" data-ng-click="generatePassword()">' + 'Generate' + '</button>',
          link: function(scope, element, attrs, ngModel) {
+
+             // Initialize the default values
+             scope.passwordLength = (scope.passwordLength) ? scope.passwordLength : 8;
+             scope.uppercase = (scope.uppercase) ? scope.uppercase : false;
+             scope.numbers = (scope.numbers) ? scope.numbers : false;
+             scope.specials = (scope.specials) ? scope.specials : false;
 
              // Enable password generation
              scope.generatePassword = function() {
@@ -38,7 +44,7 @@
 
                  // Iterate while the number is less than passwordLength
                  var finalPassword = [];
-                 for (var i = 0; i < (scope.passwordLength = (scope.passwordLength) ? scope.passwordLength : 8); i++) {
+                 for (var i = 0; i < scope.passwordLength; i++) {
                      finalPassword.push(finalCharacters[Math.floor(Math.random() * finalCharacters.length)]);
                  };
 
