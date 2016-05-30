@@ -43,7 +43,7 @@ Add ngPasswordGenerator to your app's dependencies:
 
         <password-generator field="passwordField" numbers="true"></password-generator>
 
-* symbols - boolean: Add special characters on generated password. Default value is 'true'.
+* specials - boolean: Add special characters on generated password. Default value is 'true'.
 
         <password-generator field="passwordField" specials="true"></password-generator>
 
