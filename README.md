@@ -3,10 +3,8 @@ AngularJS password generator directive:
 
     <password-generator field="passwordField"></password-generator>
 
-## To Do List
-* Create demo page
-* Add minimum of uppercase characters, numbers and special characters when we set value to 'true'
-* Require only one file to add in the app
+## Demo
+See the [demo page](https://aitorrodriguez990.github.io/ng-password-generator/example/exampleView.html) with directive working.
 
 ## Install
 ### Manual
@@ -27,36 +25,31 @@ Add ngPasswordGenerator to your app's dependencies:
     angular.module('myApplication', ['ngPasswordGenerator']);
 
 ## Usage
-Custom input field. Required:
+### Basic
+* field (required) - string: Custom input field.
 
-    <password-generator field="passwordField"></password-generator>
+        <password-generator field="passwordField"></password-generator>
 
-Custom password length. Default values is '8':
+### Options
+* passwordLength - integer: Custom password length. Default values is '8'.
 
-    <password-generator field="passwordField" password-length="8"></password-generator>
+        <password-generator field="passwordField" password-length="8"></password-generator>
 
-Add uppercase characters on generated password. Default value is 'true':
+* uppercase - boolean: Add uppercase characters on generated password. Default value is 'true'.
 
-    <password-generator field="passwordField" uppercase="true"></password-generator>
+        <password-generator field="passwordField" uppercase="true"></password-generator>
 
-Add numbers on generated password. Default value is 'true':
+* numbers - boolean: Add numbers on generated password. Default value is 'true'.
 
-    <password-generator field="passwordField" numbers="true"></password-generator>
+        <password-generator field="passwordField" numbers="true"></password-generator>
 
-Add special characters on generated password. Default value is 'true':
+* specials - boolean: Add special characters on generated password. Default value is 'true'.
 
-    <password-generator field="passwordField" specials="true"></password-generator>
+        <password-generator field="passwordField" specials="true"></password-generator>
 
-With all parameters:
+### All parameters
 
-    <password-generator field="passwordField" password-length="8" uppercase="true" numbers="true" specials="true"></password-generator>
-
-## Options
-* field: string - Required
-* passwordLength: integer
-* uppercase: boolean
-* numbers: boolean
-* symbols: boolean
+    <password-generator field="passwordField" password-length="8" uppercase="true" numbers="true" specials="true"></password-generator>  
 
 ## Changelog
 ### v0.3
@@ -68,6 +61,10 @@ With all parameters:
 ### v0.1
 * First preview of directive
 * Example code
+
+## To Do List
+* Add minimum of uppercase characters, numbers and special characters when we set value to 'true'
+* Require only one file to add in the app
 
 ## Thanks
 Based on https://github.com/rkammer/AngularJS-Password-Generator
