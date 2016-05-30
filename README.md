@@ -28,24 +28,24 @@ Add ngPasswordGenerator to your app's dependencies:
 ### Basic
 * field (required) - string: Custom input field.
 
-    <password-generator field="passwordField"></password-generator>
+        <password-generator field="passwordField"></password-generator>
 
 ### Options
 * passwordLength - integer: Custom password length. Default values is '8'.
 
-    <password-generator field="passwordField" password-length="8"></password-generator>
+        <password-generator field="passwordField" password-length="8"></password-generator>
 
 * uppercase - boolean: Add uppercase characters on generated password. Default value is 'true'.
 
-    <password-generator field="passwordField" uppercase="true"></password-generator>
+        <password-generator field="passwordField" uppercase="true"></password-generator>
 
 * numbers - boolean: Add numbers on generated password. Default value is 'true'.
 
-    <password-generator field="passwordField" numbers="true"></password-generator>
+        <password-generator field="passwordField" numbers="true"></password-generator>
 
 * symbols - boolean: Add special characters on generated password. Default value is 'true'.
 
-    <password-generator field="passwordField" specials="true"></password-generator>
+        <password-generator field="passwordField" specials="true"></password-generator>
 
 ### All parameters
 
