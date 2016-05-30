@@ -63,7 +63,6 @@ Add ngPasswordGenerator to your app's dependencies:
 * Example code
 
 ## To Do List
-* Add minimum of uppercase characters, numbers and special characters when we set value to 'true'
 * Require only one file to add in the app
 
 ## Thanks
