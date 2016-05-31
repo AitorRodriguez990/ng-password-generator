@@ -12,14 +12,22 @@
         <title>AngularJS Password Generator</title>
     </head>
     <body data-ng-controller="passwordGeneratorController">
-        <div class="container">
-            <!-- HEADER -->
-            <div class="page-header">
+        <!-- HEADER -->
+        <div class="jumbotron">
+            <div class="container">
                 <h1>AngularJS Password Generator</h1>
+                <p>
+                    AngularJS password generator directive.
+                </p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="https://github.com/AitorRodriguez990/ng-password-generator" role="button">Learn more on GitHub »</a>
+                </p>
             </div>
-
-            <!-- CONTENT -->
+        </div>
+        <!-- CONTENT -->
+        <div class="container content">
             <form role="form">
+                <!-- Options -->
                 <h2>Options</h2>
                 <div class="checkbox">
                     <label>
@@ -41,14 +49,13 @@
                     <input type="range" min="6" max="50" step="1" value="8" data-ng-model="options.passwordLength">{{options.passwordLength}}
                 </div>
 
+                <!-- Password generator -->
                 <h2>Generate password</h2>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <div class="form-inline">
-                        <input type="text" name="password" id="password" class="form-control" placeholder="Password" ng-model="passwordField">
-                        <password-generator field="passwordField" password-length="options.passwordLength" uppercase="options.uppercase" numbers="options.numbers" specials="options.specials"></password-generator>
-                    </div>
+                    <input type="text" name="password" id="password" class="form-control" placeholder="Password" ng-model="passwordField">
                 </div>
+                <password-generator field="passwordField" password-length="options.passwordLength" uppercase="options.uppercase" numbers="options.numbers" specials="options.specials"></password-generator>
             </form>
         </div>
 

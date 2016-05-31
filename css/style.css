@@ -5,10 +5,8 @@ html {
 body {
     margin-bottom: 60px;
 }
-.container {
-    width: auto;
-    max-width: 680px;
-    padding: 0 15px;
+.container.content {
+    padding-bottom: 40px;
 }
 .container .text-muted {
     margin: 20px 0;
