@@ -52,6 +52,9 @@ Add ngPasswordGenerator to your app's dependencies:
     <password-generator field="passwordField" password-length="8" uppercase="true" numbers="true" specials="true"></password-generator>  
 
 ## Changelog
+### v0.4
+* Minor changes
+
 ### v0.3
 * Bower package created
 
