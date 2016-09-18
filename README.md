@@ -17,7 +17,6 @@ Install bower package:
 
 Include the following files in your app:
 
-    <script src="ng-password-generator/app/app.js"></script>
     <script src="ng-password-generator/app/password-generator.js></script>
 
 Add ngPasswordGenerator to your app's dependencies:
@@ -52,6 +51,10 @@ Add ngPasswordGenerator to your app's dependencies:
     <password-generator field="passwordField" password-length="8" uppercase="true" numbers="true" specials="true"></password-generator>  
 
 ## Changelog
+### v1.0
+* Improved file structure
+* Removing dependence of two files
+
 ### v0.4
 * Minor changes
 
@@ -64,9 +67,6 @@ Add ngPasswordGenerator to your app's dependencies:
 ### v0.1
 * First preview of directive
 * Example code
-
-## To Do List
-* Require only one file to add in the app
 
 ## Thanks
 Based on https://github.com/rkammer/AngularJS-Password-Generator
