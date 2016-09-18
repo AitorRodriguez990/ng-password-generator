@@ -4,7 +4,7 @@ AngularJS password generator directive:
     <password-generator field="passwordField"></password-generator>
 
 ## Demo
-See the [demo page](https://aitorrodriguez990.github.io/ng-password-generator/example/exampleView.html) with directive working.
+See the [demo page](https://aitorrodriguez990.github.io/ng-password-generator/demo.html) with directive working.
 
 ## Install
 ### Manual
