@@ -52,7 +52,7 @@ Add ngPasswordGenerator to your app's dependencies:
 
 ### All parameters
 
-    <password-generator field="passwordField" password-length="8" uppercase="true" numbers="true" specials="true"></password-generator>  
+    <password-generator field="passwordField" button-text="'Click to generate'" password-length="8" uppercase="true" numbers="true" specials="true"></password-generator>  
 
 ## Changelog
 ### v1.1
