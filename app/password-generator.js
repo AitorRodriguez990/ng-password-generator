@@ -27,15 +27,17 @@ angular.module('ngPasswordGenerator', [])
                 passwordLength: '=?passwordLength',
                 uppercase: '=?uppercase',
                 numbers: '=?numbers',
-                specials: '=?specials'
+                specials: '=?specials',
+                buttonText: '=?buttonText'
             },
-            template: '<button type="button" class="btn btn-primary" data-ng-click="generatePassword()">' + 'Generate' + '</button>',
+            template: '<button type="button" class="btn btn-primary" data-ng-click="generatePassword()">{{buttonText}}</button>',
             link: function(scope, element, attrs, ngModel) {
                 // Initialize the default values
                 scope.passwordLength = (scope.passwordLength) ? scope.passwordLength : 8;
                 scope.uppercase = (scope.uppercase) ? scope.uppercase : false;
                 scope.numbers = (scope.numbers) ? scope.numbers : false;
                 scope.specials = (scope.specials) ? scope.specials : false;
+                scope.buttonText = (scope.buttonText != undefined) ? scope.buttonText : 'Generate password';
 
                 // Enable password generation
                 scope.generatePassword = function() {
