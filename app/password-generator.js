@@ -37,6 +37,7 @@ angular.module('ngPasswordGenerator', [])
                 scope.uppercase = (scope.uppercase) ? scope.uppercase : false;
                 scope.numbers = (scope.numbers) ? scope.numbers : false;
                 scope.specials = (scope.specials) ? scope.specials : false;
+                scope.buttonText = (scope.buttonText != undefined) ? scope.buttonText : 'Generate password';
 
                 // Enable password generation
                 scope.generatePassword = function() {
