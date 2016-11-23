@@ -30,6 +30,10 @@ Add ngPasswordGenerator to your app's dependencies:
         <password-generator field="passwordField"></password-generator>
 
 ### Options
+* buttonText - string: Custom button text. Default value is 'Generate password'.
+
+        <password-generator field="passwordField" button-text="'Click to generate'"></password-generator>
+
 * passwordLength - integer: Custom password length. Default values is '8'.
 
         <password-generator field="passwordField" password-length="8"></password-generator>
@@ -51,6 +55,9 @@ Add ngPasswordGenerator to your app's dependencies:
     <password-generator field="passwordField" password-length="8" uppercase="true" numbers="true" specials="true"></password-generator>  
 
 ## Changelog
+### v1.1
+* Enable custom button text
+
 ### v1.0
 * Improved file structure
 * Removing dependence of two files
