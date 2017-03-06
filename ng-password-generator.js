@@ -1,7 +1,7 @@
-/*
+/*!
  * ng - password - generator - AngularJS directive to generate a password
  * Author: Aitor Rodríguez - http://www.frontendfactory.es/
- * Version: 1.1
+ * Version: 1.1.2
  * License: MIT
  */
 
