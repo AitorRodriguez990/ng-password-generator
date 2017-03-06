@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="ngPasswordGenerator">
+<head>
+	<meta charset="utf-8">
+	<title>AngularJS Password Generator</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style>
+		html {
+			position: relative;
+			min-height: 100%;
+		}
+		body {
+			margin-bottom: 60px;
+		}
+		.content {
+			padding-bottom: 40px;
+		}
+		.text-muted {
+			margin: 20px 0;
+		}
+		.footer {
+			background-color: #f5f5f5;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			height: 60px;
+		}
+	</style>
+</head>
+<body data-ng-controller="passwordGeneratorController">
+
+	<div class="jumbotron">
+
+		<div class="container">
+
+			<h1>AngularJS Password Generator</h1>
+
+			<p>AngularJS password generator directive.</p>
+
+			<a class="btn btn-primary btn-lg" href="https://github.com/AitorRodriguez990/ng-password-generator" role="button">Learn more on GitHub »</a>
+
+		</div>
+
+	</div>
+
+	<div class="container content">
+
+		<form role="form">
+
+			<div class="row">
+
+				<div class="col-md-4">
+
+					<div class="panel panel-default">
+
+						<div class="panel-heading">
+							<h3 class="panel-title">Options</h3>
+						</div>
+
+						<div class="panel-body">
+
+							<div class="checkbox">
+
+								<label>
+									<input type="checkbox" data-ng-model="options.uppercase">
+									Uppercase characters
+								</label>
+
+							</div>
+
+							<div class="checkbox">
+
+								<label>
+									<input type="checkbox" data-ng-model="options.numbers">
+									Numbers
+								</label>
+
+							</div>
+
+							<div class="checkbox">
+
+								<label>
+									<input type="checkbox" data-ng-model="options.specials">
+									Special characters
+								</label>
+
+							</div>
+
+							<div class="form-group">
+
+								<label for="password">
+									Password Length
+									<span class="badge">{{ options.passwordLength }}</span>
+								</label>
+
+								<input type="range" min="6" max="50" step="1" value="8" data-ng-model="options.passwordLength">
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-md-8">
+
+					<div class="panel panel-primary">
+
+						<div class="panel-heading">
+							<h3 class="panel-title">Generate password</h3>
+						</div>
+
+						<div class="panel-body">
+
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="text" name="password" id="password" class="form-control" placeholder="Password" data-ng-model="passwordField">
+							</div>
+
+							<password-generator class="btn btn-primary" field="passwordField" button-text="Click to generate" password-length="options.passwordLength" uppercase="options.uppercase" numbers="options.numbers" specials="options.specials"></password-generator>
+
+						</div>
+
+						<div class="panel-body">
+
+							<label for="password2">Password 2</label>
+
+							<div class="input-group">
+
+								<input type="text" name="password2" id="password2" class="form-control" placeholder="Password" data-ng-model="passwordField2">
+
+								<span class="input-group-btn">
+
+									<button type="button" class="btn btn-default" data-password-generator data-field="passwordField2" data-button-text="Generate" data-password-length="options.passwordLength" data-uppercase="options.uppercase" data-numbers="options.numbers" data-specials="options.specials"></button>
+
+								</span>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</form>
+
+	</div>
+
+	<footer class="footer">
+
+		<div class="container">
+
+			<p class="text-muted text-right">
+				Aitor Rodríguez -
+				<a href="http://www.frontendfactory.es" target="_blank">Front End Factory</a>
+			</p>
+
+		</div>
+
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" integrity="sha384-dnb2919qR2EQMBO14MaJP3Bz8riwXj67BaeMJSmVEshMxuN8697WhSDQmz0syAAX" crossorigin="anonymous"></script>
+	<script src="ng-password-generator.js"></script>
+
+</body>
+</html>
