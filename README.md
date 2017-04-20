@@ -139,4 +139,4 @@ Based on https://github.com/rkammer/AngularJS-Password-Generator
 
 ## Copyright
 
-Copyright (c) 2016 Aitor Rodríguez - [Front End Factory](http://www.frontendfactory.es). Directive licensed under the MIT License.
+Copyright (c) 2016-Present Aitor Rodríguez - [Front End Factory](http://www.frontendfactory.es). Directive licensed under the MIT License.
