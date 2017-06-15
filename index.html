@@ -72,6 +72,10 @@
 								</label>
 							</div>
 							<div class="form-group">
+								<label for="prefix">Prefix</label>
+								<input type="input" data-ng-model="options.prefix">
+							</div>
+							<div class="form-group">
 								<label for="password">
 									Password Length
 									<span class="badge">{{ options.passwordLength }}</span>
@@ -91,7 +95,7 @@
 								<label for="password">Password</label>
 								<input type="text" name="password" id="password" class="form-control" placeholder="Password" data-ng-model="passwordField">
 							</div>
-							<password-generator class="btn btn-primary" field="passwordField" button-text="Click to generate" password-length="options.passwordLength" uppercase="options.uppercase" numbers="options.numbers" specials="options.specials" data-similar-chars="options.similarChars"></password-generator>
+							<password-generator class="btn btn-primary" field="passwordField" button-text="Click to generate" password-length="options.passwordLength" uppercase="options.uppercase" numbers="options.numbers" specials="options.specials" data-similar-chars="options.similarChars" data-prefix="options.prefix"></password-generator>
 
 						</div>
 						<div class="panel-body">
@@ -99,7 +103,7 @@
 							<div class="input-group">
 								<input type="text" name="password2" id="password2" class="form-control" placeholder="Password" data-ng-model="passwordField2">
 								<span class="input-group-btn">
-									<button type="button" class="btn btn-default" data-password-generator data-field="passwordField2" data-button-text="Generate" data-password-length="options.passwordLength" data-uppercase="options.uppercase" data-numbers="options.numbers" data-specials="options.specials" data-similar-chars="options.similarChars"></button>
+									<button type="button" class="btn btn-default" data-password-generator data-field="passwordField2" data-button-text="Generate" data-password-length="options.passwordLength" data-uppercase="options.uppercase" data-numbers="options.numbers" data-specials="options.specials" data-similar-chars="options.similarChars" data-prefix="options.prefix"></button>
 								</span>
 							</div>
 						</div>

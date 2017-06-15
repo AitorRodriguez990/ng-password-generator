@@ -15,6 +15,7 @@ angular
 
 		$scope.options = {
 			passwordLength: 8,
+			prefix: '',
 			uppercase: true,
 			numbers: true,
 			specials: true,
@@ -30,6 +31,7 @@ angular
 			scope: {
 				field: '=field',
 				passwordLength: '=?passwordLength',
+				prefix: '=?prefix',
 				uppercase: '=?uppercase',
 				numbers: '=?numbers',
 				specials: '=?specials',
@@ -41,6 +43,7 @@ angular
 
 				// Initialize the default values
 				scope.passwordLength = (scope.passwordLength) ? scope.passwordLength : 8;
+				scope.prefix = (scope.prefix) ? scope.prefix : '';
 				scope.uppercase = (scope.uppercase) ? scope.uppercase : false;
 				scope.numbers = (scope.numbers) ? scope.numbers : false;
 				scope.specials = (scope.specials) ? scope.specials : false;
@@ -86,7 +89,7 @@ angular
 					}
 
 					// Save the result on field
-					scope.field = finalPassword.join('');
+					scope.field = scope.prefix+finalPassword.join('');
 
 				};
 
