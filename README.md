@@ -94,13 +94,34 @@ Add special characters on generated password. Default value is `true`.
 <password-generator field="passwordField" specials="true"></password-generator>
 ```
 
+#### **similarChars (boolean)**
+
+Include/exclude ambiguous characters. Default value is `true`.
+
+```html
+<password-generator field="passwordField" similarChars="true"></password-generator>
+```
+
+#### **prefix (string)**
+
+Add a prefix on the generated password. Default value is an empty string.
+
+```html
+<password-generator field="passwordField" prefix="pass_"></password-generator>
+```
+
 ### All parameters
 
 ```html
-<password-generator field="passwordField" button-text="Click to generate" password-length="8" uppercase="true" numbers="true" specials="true"></password-generator>
+<password-generator field="passwordField" button-text="Click to generate" password-length="8" uppercase="true" numbers="true" specials="true" similarChars="true" prefix="pass_"></password-generator>
 ```
 
 ## Changelog
+
+### v1.2.0
+
+- Added option to include/exclude ambiguous characters
+- Added option to add a prefix on the generated password
 
 ### v1.1.2
 
