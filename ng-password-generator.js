@@ -1,7 +1,7 @@
-/*!
+/*
  * ng - password - generator - AngularJS directive to generate a password
  * Author: Aitor Rodríguez - http://www.frontendfactory.es/
- * Version: 1.1.2
+ * Version: 1.2.0
  * License: MIT
  */
 
@@ -10,7 +10,6 @@
 angular
 	.module('ngPasswordGenerator', [])
 	.controller('passwordGeneratorController', ['$scope', function($scope) {
-
 		$scope.passwordField = '';
 
 		$scope.options = {
@@ -21,10 +20,8 @@ angular
 			specials: true,
 			similarChars: true
 		};
-
 	}])
 	.directive('passwordGenerator', function() {
-
 		return {
 			restrict: 'AE',
 			replace: true,
@@ -90,11 +87,7 @@ angular
 
 					// Save the result on field
 					scope.field = scope.prefix+finalPassword.join('');
-
 				};
-
 			}
-
 		};
-
 	});

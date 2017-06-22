@@ -33,7 +33,7 @@
 	<div class="jumbotron">
 		<div class="container">
 			<h1>AngularJS Password Generator</h1>
-			<p>AngularJS password generator directive.</p>
+			<p>AngularJS password generator directive</p>
 			<a class="btn btn-primary btn-lg" href="https://github.com/AitorRodriguez990/ng-password-generator" role="button">Learn more on GitHub »</a>
 		</div>
 	</div>
@@ -46,6 +46,7 @@
 						<div class="panel-heading">
 							<h3 class="panel-title">Options</h3>
 						</div>
+
 						<div class="panel-body">
 							<div class="checkbox">
 								<label>
@@ -71,10 +72,12 @@
 									Similar/Ambiguous characters
 								</label>
 							</div>
+
 							<div class="form-group">
 								<label for="prefix">Prefix</label>
 								<input type="input" data-ng-model="options.prefix">
 							</div>
+
 							<div class="form-group">
 								<label for="password">
 									Password Length
@@ -85,19 +88,21 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="col-md-8">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
 							<h3 class="panel-title">Generate password</h3>
 						</div>
+						
 						<div class="panel-body">
 							<div class="form-group">
 								<label for="password">Password</label>
 								<input type="text" name="password" id="password" class="form-control" placeholder="Password" data-ng-model="passwordField">
 							</div>
 							<password-generator class="btn btn-primary" field="passwordField" button-text="Click to generate" password-length="options.passwordLength" uppercase="options.uppercase" numbers="options.numbers" specials="options.specials" data-similar-chars="options.similarChars" data-prefix="options.prefix"></password-generator>
-
 						</div>
+
 						<div class="panel-body">
 							<label for="password2">Password 2</label>
 							<div class="input-group">
@@ -124,6 +129,5 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js" integrity="sha384-dnb2919qR2EQMBO14MaJP3Bz8riwXj67BaeMJSmVEshMxuN8697WhSDQmz0syAAX" crossorigin="anonymous"></script>
 	<script src="ng-password-generator.js"></script>
-
 </body>
 </html>
