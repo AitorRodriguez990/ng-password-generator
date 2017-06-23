@@ -96,7 +96,7 @@ Add special characters on generated password. Default value is `true`.
 
 #### **similarChars (boolean)**
 
-Include/exclude ambiguous characters. Default value is `true`.
+Include/exclude ambiguous characters `iloIO01|`. Default value is `true`.
 
 ```html
 <password-generator field="passwordField" similarChars="true"></password-generator>
