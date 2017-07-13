@@ -1,4 +1,4 @@
-# ng-password-generator
+# Angular password generator
 
 AngularJS password generator directive:
 
